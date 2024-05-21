@@ -26,6 +26,7 @@ a {
     display: inline-block;
     transition: all 0.5s ease;
     font-weight: 400;
+    cursor: pointer;
 }
 
 ul {
@@ -95,10 +96,23 @@ ul {
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: absolute;
+    transition: all 0s ease;
 }
 
-.primary-btn:hover, .secondary-btn:hover {
-    opacity: 0.8;
+.primary-btn:hover {
+    background: -webkit-linear-gradient(267.73deg, #380036 -19.72%, #0CBABA 121.69%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#gradient-hover:hover {
+    -webkit-text-fill-color: #FFFFFF;
+    color: #FFFFFF;
+    background: linear-gradient(115.11deg, #380036 6.12%, #0CBABA 128.27%);
+    border-radius: 100px;
 }
 
 /* navbar */
@@ -208,11 +222,25 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    position: relative;
 }
 
 .arrow p {
     color: #FFFFFF;
+    padding-left: 30px;
+    white-space: nowrap;
+    position: absolute;
+    left: 80%;
+}
+
+.arrow img {
+    border-radius: 200px;
+    padding: 13px;
+    background: linear-gradient(115.11deg, #380036 6.12%, #0CBABA 128.27%);
+    cursor: pointer;
+    position: absolute;
+    left: 65%;
 }
 
 .richard, .nfts {
@@ -231,6 +259,7 @@ ul {
     right: 35px;
     bottom: -125px;
     width: 25%;
+    cursor: pointer;
 }
 
 .side-line img {
@@ -242,13 +271,32 @@ ul {
 .m-left {
     margin-left: 30px;
     position: relative;
-    left: -280px;
+    left: 90%;
 }
 
-.btns img {
+.btns {
     position: relative;
-    left: -265px;
-    bottom: -30px;
+}
+
+.btns span {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    right: 30px;
+    top: 0;
+    z-index: -1;
+}
+
+.btns span, .bear-box {
+    cursor: pointer;
+}
+
+.primary-btn.m-left:hover::after {
+    content: url('/assets/images/explore-border.svg');
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -15px;
 }
 
 /* section two */
@@ -281,40 +329,52 @@ hr {
 
 .text-align {
     text-align: left;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .right-outer-content {
     float: right;
     display: flex;
-    align-items: end;
+    align-items: flex-start;
     padding-top: 125px;
 }
 
-.right-outer-content p {
+.right-outer-content a {
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
-    margin-right: 100px;
     color: #FFFFFF;
 }
 
+.right-outer-content a:hover {
+    opacity: 0.5;
+}
+
+.view {
+    margin-right: 100px;
+}
+  
 .cards-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
+    width: 105%;
 }
-
 
 .card {
     background: #16151A;
     height: 700px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .card:not(:last-child) {
     margin-right: 30px;
+    margin-left: 0;
 }
 
 .flex-cont {
@@ -326,6 +386,7 @@ hr {
 .inner-cont1 {
     max-width: 30%;
     padding-left: 30px;
+    position: relative;
 }
 
 .inner-cont1 img {
@@ -363,20 +424,23 @@ hr {
     font-size: 24px;
     font-weight: 600;
     line-height: 35px;
+    position: absolute;
+    z-index: 999;
 }
 
 .date-overflow {
     position: absolute;
-    right: 110px;
+    right: 80px;
 }
 
 .nfts-border {
     position: relative;
-    top: -80px;
 }
 
 .third-card {
     margin-right: -75px;
+    width: 120px;
+    margin-left: 0;
 }
 
 .zig-zag {

@@ -455,4 +455,6 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     height: 180px;
+    max-width: 1440px;
+    margin-inline: auto;
 }

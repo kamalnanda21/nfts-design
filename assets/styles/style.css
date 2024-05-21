@@ -150,6 +150,8 @@ ul {
 
 .hero-section {
     margin-top: -25px;
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 .overlay-bg {
@@ -192,8 +194,8 @@ ul {
 .dragon2 {
     position: relative;
     top: 135px;
-    left: 35%;
-    padding-bottom: 70px;
+    left: 30%;
+    padding-bottom: 120px;
 }
 
 .dragon3 {
@@ -223,7 +225,9 @@ ul {
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-    position: relative;
+    position: absolute;
+    bottom: 160px;
+    left: 40%;
 }
 
 .arrow p {
@@ -231,7 +235,7 @@ ul {
     padding-left: 30px;
     white-space: nowrap;
     position: absolute;
-    left: 80%;
+    right: -150px;
 }
 
 .arrow img {
@@ -240,7 +244,6 @@ ul {
     background: linear-gradient(115.11deg, #380036 6.12%, #0CBABA 128.27%);
     cursor: pointer;
     position: absolute;
-    left: 65%;
 }
 
 .richard, .nfts {
@@ -249,23 +252,25 @@ ul {
 
 .btns-box-bottom {
     text-align: center;
-    position: absolute;
-    bottom: -120px;
-    left: 30%;
+    position: relative;
+}
+
+.video-image, .side-line {
+    position: relative;
 }
 
 .video-image img {
     position: absolute;
-    right: 35px;
-    bottom: -125px;
+    bottom: 100px;
+    left: 70%;
     width: 25%;
     cursor: pointer;
 }
 
 .side-line img {
     position: absolute;
-    top: 45%;
-    right: 50px;
+    bottom: 380px;
+    right: 60px;
 }
 
 .m-left {
@@ -275,7 +280,9 @@ ul {
 }
 
 .btns {
-    position: relative;
+    position: absolute;
+    bottom: 80px;
+    left: 25%;
 }
 
 .btns span {

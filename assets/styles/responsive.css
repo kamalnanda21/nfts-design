@@ -88,3 +88,9 @@
     }
 
 }
+
+@media (max-width:1920px) {
+    .extra-elements img {
+        width: 20%;
+    }
+}

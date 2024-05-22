@@ -159,7 +159,7 @@ ul {
 .hero-bg {
     background-image: url("/assets/images/hero-bg-img.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     max-width: 1920px;
     margin-inline: auto;
 }

@@ -255,9 +255,9 @@ ul {
 
 .top-sellers {
     background: black;
-    width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
+    margin-inline: auto;
+    padding-bottom: 200px;
 }
 
 .left-outer-content {
@@ -325,7 +325,6 @@ hr {
 .cards-container {
     display: flex;
     align-items: center;
-    padding-bottom: 200px;
     width: 100%;
 }
 
@@ -336,7 +335,6 @@ hr {
 
 .card {
     background: #16151A;
-    width: 870px;
     border-radius: 20px;
     cursor: pointer;
     padding-left: 0px;
@@ -398,16 +396,6 @@ hr {
 .date-overflow {
     position: absolute;
     right: 0;
-}
-
-.slick-slider {
-    margin-left: 0;
-    position: relative;
-    max-width: 100%;
-}
-
-.slick-initialized .slick-slide {
-    display: flex !important;
 }
 
 .zig-zag {

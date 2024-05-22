@@ -2,14 +2,12 @@
 
 $(document).ready(function() {
 $('.slick-slider').slick({
-    fade: true,
-    speed: 500,
     infinite: true,
     speed: 500,
     dots: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
     pauseOnHover: false,

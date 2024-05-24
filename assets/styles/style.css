@@ -126,7 +126,6 @@ ul {
 }
 
 .right {
-    float: right;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,12 +140,18 @@ ul {
     margin-left: 30px;
 }
 
+header {
+    position: absolute;
+    width: 100%;
+}
+
 /* section one */
 
-.hero-bg {
+.hero-section {
     background-image: url("/assets/images/hero-bg-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    padding-top: 156px;
 }
 
 .hero-container {
@@ -208,6 +213,11 @@ ul {
     display: flex;
 }
 
+.btns span img {
+    position: relative;
+    z-index: 10;
+}
+
 .btns-box-bottom {
     margin-top: auto;
     padding-bottom: 75px;
@@ -241,7 +251,7 @@ ul {
 
 /* section two */
 
-.top-sellers {
+.top-sellers-slider {
     background: black;
     max-width: 1920px;
     margin-inline: auto;
@@ -326,6 +336,9 @@ hr {
     cursor: pointer;
     padding-left: 0px;
     padding-right: 0px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .card:not(:last-child) {
@@ -333,30 +346,24 @@ hr {
     margin-left: 0;
 }
 
-.flex-cont {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner-cont1 {
+.inner-textarea {
     padding-left: 30px;
 }
 
-.inner-cont1 img {
+.inner-textarea img {
     padding-bottom: 50px;
 }
 
-.inner-cont2 {
+.inner-media {
     padding: 57px 30px 57px 54px;
 }
 
-.inner-cont2 img {
+.inner-media img {
     width: 560px;
     height: 586px;
 }
 
-.inner-cont1 p {
+.inner-textarea p {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -378,11 +385,6 @@ hr {
     line-height: 35px;
     z-index: 999;
     text-align: center;
-}
-
-.date-overflow {
-    position: absolute;
-    right: 0;
 }
 
 .slider {

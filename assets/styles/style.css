@@ -296,7 +296,6 @@ hr {
     float: right;
     display: flex;
     padding-top: 125px;
-    padding-bottom: 117px;
 }
 
 .right-outer-content a {
@@ -393,6 +392,15 @@ hr {
 .date-overflow {
     position: absolute;
     right: 0;
+}
+
+.slider {
+    padding-top: 117px;
+}
+
+.slick-slide {
+    margin-right: 30px;
+    margin-left: 5px;
 }
 
 .zig-zag {

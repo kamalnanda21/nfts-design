@@ -143,22 +143,22 @@ ul {
 
 /* section one */
 
-.hero-container {
-    height: calc(100vh - 156px);
-    max-width: 1920px;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .hero-bg {
     background-image: url("/assets/images/hero-bg-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 1920px;
     margin-inline: auto;
+}
+
+.hero-container {
+    height: calc(1080px - 156px);
+    max-width: 1920px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .hero-section {

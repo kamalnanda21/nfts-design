@@ -87,10 +87,8 @@
         padding-left: 20px;
     }
 
-}
-
-@media (max-width:1920px) {
-    .extra-elements img {
-        width: 20%;
+    .hero-container {
+        height: 700px;
     }
+
 }
